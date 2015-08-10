@@ -17,32 +17,48 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="22dp"
         android:ems="10"
-        android:hint="Número 1"
-        android:inputType="number" >
-
-        <requestFocus />
+        android:hint="发车站"
+        android:inputType="text"
+        android:text="北京" >
     </EditText>
 
-        <EditText
-            android:id="@+id/nro2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/nro1"
-            android:layout_alignRight="@+id/nro1"
-            android:layout_below="@+id/nro1"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:hint="Número 2"
-            android:inputType="number" />
+    <EditText
+        android:id="@+id/nro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nro1"
+        android:layout_alignRight="@+id/nro1"
+        android:layout_below="@+id/nro1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="到达站"
+        android:inputType="text"
+        android:text="下花园" />
 
-        <Button
-            android:id="@+id/suma"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/suma"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nro2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="请求数据" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suma" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nro2"
+            android:layout_below="@+id/suma"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="24dp"
-            android:text="Sumar" />
+            android:text="结果：" />
+    </ScrollView>
+
 
 </RelativeLayout>
